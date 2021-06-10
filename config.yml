@@ -1,5 +1,5 @@
 STAGE: dev
-BUCKET: dashboard-dataset-metadata
+BUCKET: earthdata-dashboard
 
 DATASET_METADATA_FILENAME: dev-dataset-metadata.json
 STAC_API_URL: https://earth-search.aws.element84.com/v0
