@@ -3,13 +3,18 @@ on:
   push:
     branches:
       - main
-      - abarciauskas-bgse_template-datasets
+      - demo-deploy
 
 jobs:
   run-metadata-generator:
     runs-on: ubuntu-latest
   
     steps:
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
       - name: Configure AWS credentials from MAAP AWS Account
         uses: aws-actions/configure-aws-credentials@v1
         with:
