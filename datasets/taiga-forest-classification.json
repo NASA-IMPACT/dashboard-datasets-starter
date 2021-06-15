@@ -1,9 +1,9 @@
 {
-  "id": "forest-classification",
-  "name": "Forest Classification",
+  "id": "taiga-forest-classification",
+  "name": "Taiga Forest Classification",
   "type": "raster",
   "time_unit": "day",
-  "is_periodic": false,
+  "is_periodic": "False",
   "swatch": {
       "color": "#189C54",
       "name": "Dark Green"
@@ -64,9 +64,8 @@
     ]
   },
   "paint": {
-      "raster-opacity": 1
+      "raster-opacity": "1"
   },
-  "order": 2,
+  "order": "100000",
   "info": ""
-
 }
