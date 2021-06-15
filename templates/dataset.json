@@ -6,7 +6,7 @@
   "is_periodic": "{{ dataset['is_periodic'] | default(false) }}",
   "swatch": {
       "color": "{{ dataset['swatch.color'] | default('#189C54') }}",
-      "name": "{{ dataset['swatch.name'] | default('Dark Green')}}",
+      "name": "{{ dataset['swatch.name'] | default('Dark Green')}}"
   },
   "source": {
       "type": "{{ dataset['type'] | default('raster') }}",

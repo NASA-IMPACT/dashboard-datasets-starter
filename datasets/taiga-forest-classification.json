@@ -6,7 +6,7 @@
   "is_periodic": "False",
   "swatch": {
       "color": "#189C54",
-      "name": "Dark Green",
+      "name": "Dark Green"
   },
   "source": {
       "type": "raster",
