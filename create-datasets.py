@@ -1,5 +1,4 @@
 from jinja2 import Template
-import json
 from os import listdir
 from os.path import isfile, join
 import yaml
@@ -13,4 +12,4 @@ for f in listdir(datasets_templates_path):
         with open(f"{datasets_templates_path}/{f}", 'r') as f:
             dataset_data = yaml.safe_load(f.read())
             with open(f"datasets/{dataset_data['id']}.json", 'w+') as json_file:
-                json_file.write(json.dumps(template.render(dataset=dataset_data), indent=2))
+                json_file.write(template.render(dataset=dataset_data))

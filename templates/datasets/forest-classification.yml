@@ -1,4 +1,0 @@
-id: tiaga-forest-classification
-name: Tiaga Forest Classification
-tiles:
-  s3_url_and_parameters: s3://maap-ops-dataset/maap-users/alexdevseed/gee/TTE_DATA_v201902v2-class-982.zip.tif&bidx=1&max_size=1024&resampling_method=nearest&rescale=0%2C11&return_mask=true&colormap_name=tab20
