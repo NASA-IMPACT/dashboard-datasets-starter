@@ -17,5 +17,25 @@
   "paint": {
       "raster-opacity": 0.6
   },
+  "legend": {
+    "type": "gradient",
+    "min": "0",
+    "max": "1",
+    "stops": [
+        "#000004",
+        "#120d31",
+        "#331067",
+        "#59157e",
+        "#7e2482",
+        "#a3307e",
+        "#c83e73",
+        "#e95462",
+        "#fa7d5e",
+        "#fea973",
+        "#fed395",
+        "#fcfdbf"
+    ]
+
+  },
   "info": "TSRI (topographic solar radiation index) is a transformation of topographic aspect (directional topographic exposure). It can range from 0 (cold NE slopes) to 1 (warm SW slopes). We include TSRI as a predictor of boreal aboveground biomass density. This biomass covariates was derived from Copernicus 30m DEM"
 }
