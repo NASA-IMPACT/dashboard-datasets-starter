@@ -40,3 +40,8 @@ jobs:
         env:
           STAGE: ${{ steps.extract_branch.outputs.branch }}
         run: python -m dataset_metadata_generator.src.main
+
+      - name: Execute the sites generator script
+        env:
+          STAGE: ${{ steps.extract_branch.outputs.branch }}
+        run: python -m sites_generator.src.main
