@@ -4,7 +4,6 @@ on:
     branches:
       - main
       - staging
-      - merge_changes_from_MAAP-Project
 
 jobs:
   run-metadata-generator:
