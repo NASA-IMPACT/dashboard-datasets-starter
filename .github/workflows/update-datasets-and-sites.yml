@@ -1,4 +1,4 @@
-name: Generate & update the dataset json file in the s3 folder specified in config.yml
+name: Generate & update the datasets and sites json files in the s3 folder specified in config.yml
 on:
   push:
     branches:
