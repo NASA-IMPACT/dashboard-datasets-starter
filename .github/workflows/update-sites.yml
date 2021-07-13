@@ -4,7 +4,7 @@ on:
     branches:
       - main
       - staging
-      - deploy-fix
+      - merge_changes_from_MAAP-Project
 
 jobs:
   run-sites-generator:
