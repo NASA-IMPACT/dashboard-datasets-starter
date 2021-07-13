@@ -54,4 +54,4 @@ python sites_generator/src/main.py | jq .
 
 1. In the GitHub repository, add secrets (Settings -> Secrets) for accessing AWS (AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY)
 2. Update config.yml with the appropriate BUCKET, DATASETS and SITES configuration.
-3. Push config.yml to GitHub and verify it runs correctly. Note only branches configured in `.github/workflows/*.yml` will run the workflow (e.g. generate the sites metadata files).
+3. Push config.yml to GitHub and verify it runs correctly. Note only branches configured in `.github/workflows/update-datasets-and-sites.yml` will run the workflow (generate the datasets/sites metadata files).
