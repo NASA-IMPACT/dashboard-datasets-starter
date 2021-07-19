@@ -1,4 +1,4 @@
-name: Generate & update the dataset json file in the s3 folder specified in config.yml
+name: Generate & update the datasets and sites json files in the s3 folder specified in config.yml
 on:
   push:
     branches:
@@ -39,3 +39,8 @@ jobs:
         env:
           STAGE: ${{ steps.extract_branch.outputs.branch }}
         run: python -m dataset_metadata_generator.src.main
+
+      - name: Execute the sites generator script
+        env:
+          STAGE: ${{ steps.extract_branch.outputs.branch }}
+        run: python -m sites_generator.src.main
